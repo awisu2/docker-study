@@ -6,3 +6,4 @@
 ## samples
 
 - [ubuntu](./ubuntu/README.md)
+- [redis](./samples/redis/README.md)
