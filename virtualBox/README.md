@@ -21,3 +21,19 @@
     - `sudo usermod -a -G vboxsf "$USER"`
   3. マウントポイントを設定しないこと
     - 自動マウント, 永続化するにチェックを入れる
+
+## ubuntu に dotnet をインストールする
+
+インストール方法はこちら。ただし6.0しか書いてない
+
+- [Install \.NET on Ubuntu \- \.NET \| Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu)
+
+5.0をインストールしたい場合は、20.04 のdepを一回インストールして、`apt update` する
+
+- パッケージリポジトリの削除方法: `sudo apt-get remove packages-microsoft-prod`
+- .netのパッケージリポジトリファイルダウロード: `wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
+  - 22.4: `wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb`
+- リポジトリインストール: `sudo dpkg -i packages-microsoft-prod.deb`
+  - バージョンが上なら上書き可能っぽい
+- リポジトリ更新: `sudo apt update` リポジトリインストールとセットで
+- .net インストール `sudo apt-get install -y dotnet-sdk-5.0`, `sudo apt-get install -y dotnet-sdk-6.0`
