@@ -17,5 +17,7 @@
   2. メニュー > デバイスの設定
 - about folder share:
   1. we need "Guest Additions" writen befer.
-  2. `sudo usermod -a -G vboxsf "$USER"`
- 
+  2. アクセスしたときにパーミッション宣言を出さない方法
+    - `sudo usermod -a -G vboxsf "$USER"`
+  3. マウントポイントを設定しないこと
+    - 自動マウント, 永続化するにチェックを入れる
