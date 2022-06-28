@@ -2,6 +2,12 @@
 
 [Ubuntu \- Official Image \| Docker Hub](https://hub.docker.com/_/ubuntu)
 
+## easy run
+
+```bash
+docker run --rm -it ubuntu:18.04 /bin/bash
+```
+
 ## docker-compose
 
 run with tty. it can access with bash because ther process does not break
