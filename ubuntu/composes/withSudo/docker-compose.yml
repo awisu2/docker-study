@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  ubuntu:
+    image: ubuntu:18.04
+    working_dir: /usr/src
+    volumes:
+      - ./src/:/usr/src
+    ports:
+      - 80:80
+    restart: "no"
+    tty: true
