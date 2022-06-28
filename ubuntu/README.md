@@ -12,8 +12,12 @@ docker run --rm -it -v "$(pwd)":/tmp/work ubuntu:18.04 /bin/bash
 
 - [just run](./composes/justrun/docker-compose.yml)
   - run with tty. it can access with bash because ther process does not break
-  - command
-    ```bash
-    docker compose up -d
-    docker compose exec ubuntu bash
-    ```
+- [with sudo](./composes/withSudo/docker-compose.yml)
+
+### basic command
+
+```bash
+docker compose up -d
+docker compose exec ubuntu bash
+docker down
+```
