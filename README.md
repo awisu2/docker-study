@@ -25,3 +25,8 @@ docker ではないが、virtualboxの動かし方
     - pwd はスペースが入るとエラーになるので `"` で囲っておく
   - エントリポイント指定: `docker run -i -t --entrypoint /bin/bash ubuntu`
     - [Docker run リファレンス — Docker\-docs\-ja 20\.10 ドキュメント](https://docs.docker.jp/engine/reference/run.html#entrypoint)
+
+## notes
+
+- windowsで異様にメモリを消費する: vmmemというプロセスがwsl＋dockerで悪さをするとのこと
+  - [programing\-study/README\.md at main · awisu2/programing\-study](https://github.com/awisu2/programing-study/blob/main/os/windows/windwos11/README.md)
